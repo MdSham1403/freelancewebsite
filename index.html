@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Sam Dev — Full-Stack Freelancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Sam<span class="logo-accent">Dev</span><span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Available for freelance · Chennai, India</p>
+      <h1 class="hero-title">
+        I build things<br />
+        <span class="hero-title-accent">for the web.</span>
+      </h1>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">sam@freelance ~ </span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></p>
+          <p class="terminal-line t-out">Full-Stack Developer · React · Django · FastAPI</p>
+          <p class="terminal-line"><span class="t-prompt">$ </span><span class="t-cmd">skills --top</span></p>
+          <p class="terminal-line t-out">[ React, Python, Django, SQL, PostgreSQL, Socket.io, HLS Video ]</p>
+          <p class="terminal-line"><span class="t-prompt">$ </span><span id="typewriter" class="t-cmd"></span><span class="cursor">█</span></p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="stats-band">
+    <div class="stat">
+      <span class="stat-num">10+</span>
+      <span class="stat-label">Projects Shipped</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">5+</span>
+      <span class="stat-label">Live Deployments</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">2+ Years</span>
+      <span class="stat-label">Dev & IT Experience</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">∞</span>
+      <span class="stat-label">Problems Solved</span>
+    </div>
+  </div>
+
+  <section class="section" id="work">
+    <div class="section-header">
+      <p class="section-eyebrow">Selected Work</p>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card project-card--featured">
+        <div class="project-tag-row">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Socket.io</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+        <h3 class="project-title">Multiplayer Mini-Games Platform</h3>
+        <p class="project-desc">Real-time multiplayer gaming platform with 24+ games, live rooms, leaderboards, and an admin panel. Players compete head-to-head with sub-50ms latency via WebSocket.</p>
+        <div class="project-meta">
+          <span class="project-meta-item">24+ games</span>
+          <span class="project-meta-item">Real-time rooms</span>
+          <span class="project-meta-item">Global leaderboard</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://minigames-fawn-theta.vercel.app/" target="_blank" class="project-link">Live Demo →</a>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tag-row">
+          <span class="project-tag">Django</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+        <h3 class="project-title">Multi-Tenant Restaurant SaaS</h3>
+        <p class="project-desc">A full-featured POS system supporting multiple restaurant tenants, custom staff tracking, session ledgers, menu management, and direct table billing setups.</p>
+        <div class="project-footer">
+          <a href="https://posprosystem.netlify.app/" target="_blank" class="project-link">Live Demo →</a>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tag-row">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Django</span>
+          <span class="project-tag">HLS Video</span>
+          <span class="project-tag">Cloudinary</span>
+        </div>
+        <h3 class="project-title">HLS Movie Streaming Engine</h3>
+        <p class="project-desc">Adaptive media video streaming pipeline utilizing distributed asset management and encoded chunk playlists for seamless playback over any network speed.</p>
+        <div class="project-footer">
+          <a href="https://moviezhub14.up.railway.app/" target="_blank" class="project-link">Live Demo →</a>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tag-row">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">yt-dlp</span>
+        </div>
+        <h3 class="project-title">TubeGrab — YouTube Downloader</h3>
+        <p class="project-desc">Clean web UI for downloading YouTube videos in multiple formats. Built with Express + yt-dlp + ffmpeg on the backend, Vite/React on the front.</p>
+        <div class="project-footer">
+          <a href="https://yttubegrab.netlify.app/" target="_blank" class="project-link">Live Demo →</a>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-tag-row">
+          <span class="project-tag">React Context</span>
+          <span class="project-tag">Recharts</span>
+          <span class="project-tag">IndexedDB</span>
+        </div>
+        <h3 class="project-title">Ops Performance Tracker</h3>
+        <p class="project-desc">High-performance data visualizer reading large daily spreadsheet logs to instantly flag operations SLA breaches and track turnaround time (TAT).</p>
+        <div class="project-footer">
+          <a href="https://ituamdashboard.netlify.app/" target="_blank"  class="project-link">Live Demo →</a>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section-dark" id="skills">
+    <div class="section-header">
+      <p class="section-eyebrow">Tech Stack</p>
+      <h2 class="section-title">What I work with</h2>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skill-group">
+        <h3 class="skill-group-title">Frontend</h3>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-icon">⚛</span> React</div>
+          <div class="skill-pill"><span class="skill-icon">⚡</span> Vite</div>
+          <div class="skill-pill"><span class="skill-icon">🎨</span> CSS Modules</div>
+          <div class="skill-pill"><span class="skill-icon">📱</span> PWA</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Backend</h3>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-icon">🐍</span> Python / Django / FastAPI</div>
+          <div class="skill-pill"><span class="skill-icon">🟩</span> Node.js / Express</div>
+          <div class="skill-pill"><span class="skill-icon">🔌</span> Socket.io</div>
+          <div class="skill-pill"><span class="skill-icon">🔄</span> REST APIs</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Data & Cloud</h3>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-icon">🗄</span> PostgreSQL</div>
+          <div class="skill-pill"><span class="skill-icon">⚡</span> Supabase</div>
+          <div class="skill-pill"><span class="skill-icon">🎬</span> HLS Video Streaming</div>
+          <div class="skill-pill"><span class="skill-icon">☁</span> Cloudinary</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 class="skill-group-title">Tools & Deploy</h3>
+        <div class="skill-pills">
+          <div class="skill-pill"><span class="skill-icon">▲</span> Vercel</div>
+          <div class="skill-pill"><span class="skill-icon">🚂</span> Railway</div>
+          <div class="skill-pill"><span class="skill-icon">🔀</span> Git / GitHub</div>
+          <div class="skill-pill"><span class="skill-icon">📊</span> Excel Automation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="about-layout">
+      <div class="about-left">
+        <p class="section-eyebrow">About Me</p>
+        <h2 class="section-title">Developer from<br/>Chennai, India.</h2>
+        <p class="about-text">
+          I don't just write lines of code — I design digital playgrounds. I love taking complex backend workflows, APIs, or data pipelines, turning them into smooth interfaces, and making sure the final look functions flawlessly.
+        </p>
+        <p class="about-text">
+          Currently available for freelance projects. I specialize in React frontends paired with Python (Django/FastAPI) or Node.js backends, with a strong focus on clean architecture, performance optimization, and custom solutions.
+        </p>
+        <div class="about-badges">
+          <div class="about-badge">
+            <span class="badge-dot"></span>
+            Available for work
+          </div>
+          <div class="about-badge">
+            <span class="badge-dot badge-dot-purple"></span>
+            Open to remote
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-card">
+          <div class="about-card-row">
+            <span class="about-card-label">Location</span>
+            <span class="about-card-value">Chennai, India 🇮🇳</span>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-label">Experience</span>
+            <span class="about-card-value">2+ Years (IT + Dev)</span>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-label">Primary Stack</span>
+            <span class="about-card-value">React · Django · PostgreSQL</span>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-label">Languages</span>
+            <span class="about-card-value">Python · JavaScript · SQL</span>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-label">Response Time</span>
+            <span class="about-card-value">Within 24 hours</span>
+          </div>
+          <a href="#contact" class="btn-primary about-btn">Start a Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contact" id="contact">
+    <div class="contact-inner">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="contact-title">Have a project in mind?</h2>
+      <p class="contact-sub">I'm available for freelance work, contract projects, and modular application design. Let's build something great.</p>
+
+      <form class="contact-form" id="contactForm" netlify>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project">Project Type</label>
+          <select id="project">
+            <option value="">Select a type…</option>
+            <option>Web Application (React / Django)</option>
+            <option>Media Streaming Platform</option>
+            <option>Ops Performance Dashboard</option>
+            <option>Full-Stack System</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Tell me about your project…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary form-submit">Send Message →</button>
+      </form>
+
+      <div class="contact-links">
+        <a href="mailto:mdsham1403@gmail.com" class="contact-social">✉ Mail</a>
+        <a href="https://github.com/MdSham1403" class="contact-social">GitHub</a>
+        <a href="https://www.linkedin.com/in/md-shameer/" class="contact-social">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer">
+  <p>
+    Built with care ·
+    <span class="footer-accent">&lt;SamDev/&gt;</span>
+    · Chennai <span id="year"></span>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
