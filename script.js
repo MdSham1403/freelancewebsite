@@ -99,8 +99,8 @@ document.getElementById('contactForm').addEventListener('submit', async function
     });
 
     // 2. Simultaneously fire the Telegram API notification
-    const botToken = "YOUR_BOT_TOKEN_HERE"; // Put your BotFather token here
-    const chatId = "YOUR_CHAT_ID_HERE";     // Put your personal Chat ID here
+    const botToken = "8990579775:AAGt26f3jrQfkSfEpBtMwQzZ0BTl4neGO9A"; 
+    const chatId = "7881710164";   
     
     const telegramText = `🚀 *New Portfolio Message!*\n\n` +
                          `👤 *Name:* ${name}\n` +

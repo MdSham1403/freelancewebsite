@@ -1,5 +1,3 @@
-const fetch = require('node-fetch'); // Built into Netlify runtime
-
 exports.handler = async (event) => {
   // Only allow POST requests
   if (event.httpMethod !== "POST") {
@@ -10,8 +8,8 @@ exports.handler = async (event) => {
     const { name, email, projectType, message } = JSON.parse(event.body);
 
     // Hardcode your secret tokens safely here on the server side
-    const botToken = "YOUR_ACTUAL_BOT_TOKEN_HERE"; 
-    const chatId = "YOUR_ACTUAL_CHAT_ID_HERE";     
+    const botToken = "8990579775:AAGt26f3jrQfkSfEpBtMwQzZ0BTl4neGO9A"; 
+    const chatId = "7881710164";     
 
     const telegramText = `🚀 *New Portfolio Message!*\n\n` +
                          `👤 *Name:* ${name}\n` +
