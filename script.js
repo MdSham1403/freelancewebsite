@@ -108,13 +108,15 @@ document.getElementById('contactForm').addEventListener('submit', async function
                          `📂 *Project:* ${projectType}\n` +
                          `💬 *Message:* ${message}`;
 
-    const telegramPromise = fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+// 2. Simultaneously fire the notification via your new secure Netlify route
+    const telegramPromise = fetch('/.netlify/functions/send-telegram', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        chat_id: chatId,
-        text: telegramText,
-        parse_mode: 'Markdown'
+        name: name,
+        email: email,
+        projectType: projectType,
+        message: message
       })
     });
 
